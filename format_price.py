@@ -20,7 +20,8 @@ def format_price(price):
     if float_price.is_integer():
         pretty_price = '{:,.0f}'.format(float_price).replace(',', ' ')
     else:
-        pretty_price = '{:,.2f}'.format(float_price).replace(',', ' ').replace('.',',')
+        formatable_price = '{:,.2f}'.format(float_price)
+        pretty_price = formatable_price.replace(',', ' ').replace('.', ',')
     return pretty_price
 
 
@@ -30,6 +31,6 @@ def main():
         input_price,
         format_price(input_price)
     ))
-    
+
 if __name__ == '__main__':
     main()
