@@ -1,7 +1,21 @@
-# Price Formatter
+# Форматирование цены
 
-[TODO. There will be project description]
+Форматирует цены к более наглядному виду.
 
-# Project Goals
+# Как запустить
 
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+Требуется python 3.5 и выше. 
+Для использования в коде модуль импортирется. 
+Для испольпользования в консоли нужно ввести обязательный аргумен `-p` или `--price`.
+Чтобы проверить работоспособность запустите тесты в `test.py`.
+
+Пример использования в консоли:
+```bash
+$ python format_price.py -p 4234.123
+Введеная цена: 4234.123
+Отформатированая цена: 4 234,12
+```
+
+# Цели проекта
+
+Код создан в учебных целях. В рамках учебного курса по веб-разработке ― [DEVMAN.org](https://devman.org)
