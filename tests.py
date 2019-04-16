@@ -13,7 +13,7 @@ class TestPriceMethod(unittest.TestCase):
         self.assertEqual(format_price('3245.000000'), '3 245')
 
     def test_format_price_valid_str_with_point(self):
-        self.assertEqual(format_price('3245.123'), '3 245,12')
+        self.assertEqual(format_price('3245.123'), '3 245.12')
 
     def test_format_price_valid_str_null(self):
         self.assertEqual(format_price('0'), '0')

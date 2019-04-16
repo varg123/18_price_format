@@ -21,7 +21,7 @@ def format_price(price):
         pretty_price = '{:,.0f}'.format(float_price).replace(',', ' ')
     else:
         formatable_price = '{:,.2f}'.format(float_price)
-        pretty_price = formatable_price.replace(',', ' ').replace('.', ',')
+        pretty_price = formatable_price.replace(',', ' ')
     return pretty_price
 
 
